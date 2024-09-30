@@ -1,0 +1,9 @@
+.hh-box{
+    width: 180px; height: 220px; padding-top: 25px; position: relative;
+    border: 1px solid blue; text-align: center;
+    display: inline-block;
+    margin: 5px;
+}
+.hh-box:hover{border-radius: 10px; border: 1px double red;}
+.hh-box-image{width: 160px;}
+.hh-box-newicon{position: absolute;top:0; right: 0; width: 77px;}
