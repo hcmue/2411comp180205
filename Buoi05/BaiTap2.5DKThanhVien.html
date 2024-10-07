@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mytextbox {
+            color: red;
+            background-color: aquamarine;
+            border: 1px solid #996633;
+            width: 300px;
+        }
+        table td { border: 1px solid #CC9999;}
+    </style>
+</head>
+<body>
+    <form action="XuLyDangKy.php" enctype="multipart/form-data" method="post">
+        <table cellpadding="4" border="1" width="500" cellspacing="0">
+            <caption>ĐĂNG KÝ THÀNH VIÊN CLB NGHE NHẠC</caption>
+            <tr>
+                <td>Họ tên</td>
+                <td>
+                    <input id="txtHoTen" name="txtHoTen" class="mytextbox" />
+                </td>
+            </tr>
+            <tr>
+                <td>Tên đăng nhập</td>
+                <td>
+                    <input id="txtUserName" name="txtUserName" class="mytextbox"  />
+                </td>
+            </tr>
+            <tr>
+                <td>Mật khẩu</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Gõ lại mật khẩu</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ngoại ngữ</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Nghề nghiệp</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Hình</td>
+                <td>
+                    <input type="file" name="fHinh" />
+                </td>
+            </tr>
+            <tr>
+                <td>Sở thích</td>
+                <td>
+                    <textarea class="mytextbox" name="txtSoThich" id="txtSoThich" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

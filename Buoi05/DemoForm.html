@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="frmDangNhap" action="XuLyDangNhap.php" method="get">
+        <h2>Đăng nhập</h2>
+        Username:
+        <input name="tendn" value="123" placeholder="Mã sinh viên" type="text" />
+        <br />
+        Password:
+        <input name="matkhau" placeholder="Mật khẩu" type="password" />
+        <br />
+        Giới tính:
+        <input type="radio" name="gioitinh" value="0"/>Nam
+        <input type="radio" checked name="gioitinh" value="1" />Nữ
+        <input type="radio" name="gioitinh" value="-1" />Khác
+        <br>Sở thích:
+        <input type="checkbox" name="sothich" value="Ăn">Ăn
+        <input type="checkbox" name="sothich" value="Ngủ">Ngủ
+        <input type="checkbox" name="sothich" value="Xem phim">Xem phim
+        <br>
+        Tỉnh thành:
+        <select name="tinhthanh">
+            <option value="HN">Hà Nội</option>
+            <option value="HCM">Hồ Chí Minh</option>
+            <option value="LA">Long An</option>
+        </select>
+        <br>
+        <button>Đăng nhập</button>
+        <button type="reset">Nhập lại</button>
+    </form>
+</body>
+</html>
