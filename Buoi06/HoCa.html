@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ cá vui nhộn</title>
+    <style>
+        #hoca{border: 1px solid blue; height: 300px;}
+        #shark{
+            left:100px; top:400px;
+            position: absolute;
+            animation-name: Shark;
+            animation-duration: 15s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+        }
+        @keyframes Shark{
+            0%   {left:100px; top:400px;}
+            20%  {left:300px; top:400px;}
+            40%  {left:500px; top:300px;}
+            50%  {left:700px; top:50px;}
+            60%  {left:700px; top:100px;}
+            80%  {left:500px; top:200px;}
+            100% {left:100px; top:400px; transform:scaleX(-1);}  
+        }
+
+    </style>
+</head>
+<body>
+    <div id="hoca">
+        <img src="aquarium/goldFishSchool.png" alt="Gold Fish" >
+        <img id="shark" src="aquarium/shark.png" alt="Shark">
+        <img src="aquarium/turtle.png" alt="Turtle">
+    </div>
+</body>
+</html>
