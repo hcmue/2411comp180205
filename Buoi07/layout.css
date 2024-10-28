@@ -1,0 +1,5 @@
+#myheader{
+    height: 130px; position: relative;
+}
+#mynav{position: absolute; left: 0; bottom: 0; width: 100%;}
+li.list-group-item > a{ text-decoration: none; color: red;}
