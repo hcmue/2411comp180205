@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính tổng</title>
+</head>
+<body>
+    <div>
+        <h2>Tính tổng</h2>
+        <div>
+            Nhập X: <input type="number" id="x" />
+        </div>
+        <div>
+            Nhập N: <input type="number" id="n" />
+        </div>
+        <button type="button" onclick="xuLyTinhToan()">Tính</button>
+        <div>Kết quả S = <span id="ketqua"></span></div>
+    </div>
+    <script>
+        function xuLyTinhToan() {
+            // alert('Helllo');
+            let xObj = document.getElementById("x");
+            let nObj = document.getElementById("n");
+            // alert("Bạn nhập x = " + xObj.value);
+            let x = parseInt(xObj.value);
+            let n = parseInt(nObj.value);
+            let S = 0;
+            for (i = 1; i <= n; i++){
+                S += Math.pow(x, i);
+            }
+            document.getElementById("ketqua").innerHTML = S;
+        }
+    </script>
+</body>
+</html>
