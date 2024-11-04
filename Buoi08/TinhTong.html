@@ -9,7 +9,7 @@
     <div>
         <h2>Tính tổng</h2>
         <div>
-            Nhập X: <input type="number" id="x" />
+            Nhập X: <input type="number" id="x" step="0.01" />
         </div>
         <div>
             Nhập N: <input type="number" id="n" />
@@ -23,7 +23,7 @@
             let xObj = document.getElementById("x");
             let nObj = document.getElementById("n");
             // alert("Bạn nhập x = " + xObj.value);
-            let x = parseInt(xObj.value);
+            let x = parseFloat(xObj.value);
             let n = parseInt(nObj.value);
             let S = 0;
             for (i = 1; i <= n; i++){
